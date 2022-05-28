@@ -6,13 +6,11 @@ async function merge(ele, low, mid, high) {
 
     for (let i = 0; i < n1; i++) {
         await waitforme(delay);
-        // color
         ele[low + i].style.background = 'orange';
         left[i] = ele[low + i].style.height;
     }
     for (let i = 0; i < n2; i++) {
         await waitforme(delay);
-        // color
         ele[mid + 1 + i].style.background = 'yellow';
         right[i] = ele[mid + 1 + i].style.height;
     }
@@ -20,11 +18,8 @@ async function merge(ele, low, mid, high) {
     let i = 0, j = 0, k = low;
     while (i < n1 && j < n2) {
         await waitforme(delay);
-
-        // To add color for which two r being compared for merging
         if (parseInt(left[i]) <= parseInt(right[j])) {
             console.log('In merge while loop if');
-            // color
             if ((n1 + n2) === ele.length) {
                 ele[k].style.background = 'green';
             }
@@ -37,7 +32,6 @@ async function merge(ele, low, mid, high) {
             k++;
         }
         else {
-            // color
             if ((n1 + n2) === ele.length) {
                 ele[k].style.background = 'green';
             }
@@ -51,7 +45,6 @@ async function merge(ele, low, mid, high) {
     }
     while (i < n1) {
         await waitforme(delay);
-        // color
         if ((n1 + n2) === ele.length) {
             ele[k].style.background = 'green';
         }
@@ -65,7 +58,6 @@ async function merge(ele, low, mid, high) {
     while (j < n2) {
         await waitforme(delay);
         console.log("In while if n2 is left");
-        // color
         if ((n1 + n2) === ele.length) {
             ele[k].style.background = 'green';
         }

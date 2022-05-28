@@ -4,10 +4,8 @@ async function bubble()
     const ele = document.querySelectorAll(".bar");
     for (let i = 0; i < ele.length - 1; i++)
     {
-        // console.log('In ith loop');
         for (let j = 0; j < ele.length - i - 1; j++)
          {
-            // console.log('In jth loop');
             ele[j].style.background = 'blue';
             ele[j + 1].style.background = 'blue';
             if (parseInt(ele[j].style.height) > parseInt(ele[j + 1].style.height))
@@ -23,7 +21,6 @@ async function bubble()
     }
     ele[0].style.background = 'green';
 }
-
 const bubSortbtn = document.querySelector(".bubbleSort");
 bubSortbtn.addEventListener('click', async function () {
     disableSortingBtn();
