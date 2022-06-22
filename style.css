@@ -12,10 +12,10 @@ body{
     justify-content: center;
 }
 .flex-item{
-    background: cyan;
-    border:1pt solid black;
+    background: rgb(233, 237, 237);
+    border:1pt solid rgb(201, 17, 17);
     width: 10px;
-    transition:0.1s all ease;
+    transition:0.2s all ease-in-out;
 }
 .row{
     display: grid;

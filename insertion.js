@@ -5,10 +5,10 @@ async function insertion() {
     for (let i = 1; i < ele.length; i++) {
         let j = i - 1;
         let key = ele[i].style.height;
-        ele[i].style.background = 'blue';
+        ele[i].style.background = 'yellow';
         await waitforme(delay);
         while (j >= 0 && (parseInt(ele[j].style.height) > parseInt(key))) {
-            ele[j].style.background = 'blue';
+            ele[j].style.background = 'grey';
             ele[j + 1].style.height = ele[j].style.height;
             j--;
             await waitforme(delay);
